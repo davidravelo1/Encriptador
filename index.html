@@ -5,17 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Encriptador</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Encriptador</h1>
-    </div>
-    <div class="container">
-        <div class="text">
-            <input type="text" class="texto">
+    <header>
+        <h1 class="animate__animated animate__backInLeft">Encriptador</h1>
+    </header>
+    <main>
+        <div class="container animate__animated animate__backInRight animate__delay-1s">
+            <div class="text">
+                <input type="text" class="text_e" placeholder="Ingrese el texto aquí">
+            </div>
+            <div class="encryption">
+                <img src="images/no_text.png" class="icon">
+                <p class="text_en">Ningun texto encontrado</p>
+                <button class="copy">Copiar</button>
+            </div>
+            <h2 class="message">No ingresar acentos ni mayusculas</h2>
     
+            <div class="buttons">
+                <button onclick="change()">Encriptar</button>
+                <button onclick="change_2()">Desencriptar</button>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy Alura retos</p>
+    </footer>
+   
+    <script src="encript.js"></script>
 </body>
 </html>
